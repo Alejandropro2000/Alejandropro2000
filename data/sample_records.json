@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "cedula": "4567890",
+      "nombre": "Carlos Ramon Benitez",
+      "estado_civil": "Casado",
+      "domicilio": "Asunción, Barrio San Vicente",
+      "telefonos": ["+595981111111", "+595971222222"],
+      "ips": {
+        "empleador": "Comercial Del Sur S.A.",
+        "meses_aporte": 58,
+        "beneficiarios": ["Maria Benitez", "Luz Benitez"]
+      },
+      "denuncias_policiales": "Sin denuncias vigentes",
+      "cedula_duplicada": false,
+      "funcionario_publico": "No",
+      "observacion_rrhh": "Referencias laborales estables en los últimos 3 años"
+    },
+    {
+      "cedula": "5234561",
+      "nombre": "Veronica Acosta Gimenez",
+      "estado_civil": "Soltera",
+      "domicilio": "Lambaré, Zona Centro",
+      "telefonos": ["+595984333333"],
+      "ips": {
+        "empleador": "Servicios Integrales Py",
+        "meses_aporte": 22,
+        "beneficiarios": []
+      },
+      "denuncias_policiales": "1 denuncia archivada en 2021",
+      "cedula_duplicada": false,
+      "funcionario_publico": "Sí - Municipalidad",
+      "observacion_rrhh": "Antecedente administrativo sin impacto penal"
+    },
+    {
+      "cedula": "3322110",
+      "nombre": "Rosa Elvira Duarte",
+      "estado_civil": "Viuda",
+      "domicilio": "Ciudad del Este, Km 7",
+      "telefonos": ["+595973444444", "+595986555555"],
+      "ips": {
+        "empleador": "Sin registro vigente",
+        "meses_aporte": 0,
+        "beneficiarios": ["Miguel Duarte"]
+      },
+      "denuncias_policiales": "Sin registros",
+      "cedula_duplicada": true,
+      "funcionario_publico": "No",
+      "observacion_rrhh": "Verificar consistencia documental por cédula duplicada"
+    }
+  ]
+}
