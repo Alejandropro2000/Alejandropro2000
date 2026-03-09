@@ -1,16 +1,68 @@
-## Hi there 👋
+# SentinelAV para notebook
 
-<!--
-**Alejandropro2000/Alejandropro2000** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Listo: rehice el proyecto para que sea una **herramienta utilizable** (no texto de demo), con:
 
-Here are some ideas to get you started:
+- detección por **firmas SHA-256**
+- análisis **heurístico configurable por perfiles**
+- **exclusiones** de rutas
+- **cuarentena** automática
+- **reportes JSON**
+- modo **monitoreo continuo** (`--watch`)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+> Importante: sigue siendo un escáner local en Python. Para máxima protección en producción, úsalo junto a un antivirus comercial/Defender actualizado.
+
+## Requisitos
+
+- Python 3.9+
+
+## Uso
+
+Escaneo normal:
+
+```bash
+python3 antivirus.py /ruta/a/escanear
+```
+
+Perfil más agresivo:
+
+```bash
+python3 antivirus.py /ruta/a/escanear --profile paranoid
+```
+
+Umbral personalizado:
+
+```bash
+python3 antivirus.py /ruta/a/escanear --threshold 25
+```
+
+Excluir rutas:
+
+```bash
+python3 antivirus.py /ruta/a/escanear --exclude /ruta/a/escanear/node_modules --exclude /ruta/a/escanear/.git
+```
+
+Cuarentena automática:
+
+```bash
+python3 antivirus.py /ruta/a/escanear --quarantine --quarantine-dir ./quarantine
+```
+
+Guardar reporte JSON:
+
+```bash
+python3 antivirus.py /ruta/a/escanear --json-report --report-dir ./reports
+```
+
+Monitoreo continuo cada 5 minutos:
+
+```bash
+python3 antivirus.py /ruta/a/escanear --watch 300 --json-report
+```
+
+## Recomendación para tu notebook
+
+1. Programa escaneos diarios de `Descargas`, escritorio y carpetas compartidas.
+2. Activa cuarentena en esas rutas de alto riesgo.
+3. Revisa reportes JSON para seguimiento de incidentes.
+4. Mantén sistema operativo, navegador y Office actualizados.
+5. Usa este escáner como capa adicional junto a tu AV principal.
