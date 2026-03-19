@@ -76,4 +76,5 @@ Archivos incluidos:
 
 - `intel_platform/schema.sql`: esquema PostgreSQL para despliegue compartido entre varias computadoras.
 - `intel_platform/init_demo_db.py`: inicializador de demo SQLite con datos de ejemplo.
-- `intel_platform/README.md`: arquitectura recomendada y límites de uso seguro.
+- `intel_platform/demo_viewer.py`: visor web local de solo lectura para inspeccionar la demo en navegador.
+- `intel_platform/README.md`: arquitectura recomendada, cómo abrir la demo y límites de uso seguro.

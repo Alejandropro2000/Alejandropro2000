@@ -65,6 +65,13 @@ psql -U postgres -d intel_platform -f intel_platform/schema.sql
 python3 intel_platform/init_demo_db.py --db intel_platform/demo.db --seed
 ```
 
+### Ver el programa en navegador
+```bash
+python3 intel_platform/demo_viewer.py --db intel_platform/demo.db --seed-if-missing
+```
+
+Luego abre `http://127.0.0.1:8000` en tu navegador para ver los expedientes, leads, evidencia, notas y jobs de IA de la demo.
+
 ## Recomendaciones de operación
 
 1. Separar red de usuarios, base de datos y nodo de IA.
