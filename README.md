@@ -66,3 +66,14 @@ python3 antivirus.py /ruta/a/escanear --watch 300 --json-report
 3. Revisa reportes JSON para seguimiento de incidentes.
 4. Mantén sistema operativo, navegador y Office actualizados.
 5. Usa este escáner como capa adicional junto a tu AV principal.
+
+
+## Módulo adicional: plataforma investigativa segura
+
+Se agregó un blueprint autohospedado en `intel_platform/` para una **base de gestión de casos e inteligencia investigativa** con soporte multiusuario, auditoría e integración de IA local sin pago por consulta.
+
+Archivos incluidos:
+
+- `intel_platform/schema.sql`: esquema PostgreSQL para despliegue compartido entre varias computadoras.
+- `intel_platform/init_demo_db.py`: inicializador de demo SQLite con datos de ejemplo.
+- `intel_platform/README.md`: arquitectura recomendada y límites de uso seguro.
